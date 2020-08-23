@@ -1,0 +1,50 @@
+{
+  "name": "instagram_clone_be",
+  "version": "0.0.1",
+  "description": "Back End REST API for Instagram Clone App",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "start": "node index.js",
+    "test": "cross-env DB_ENV=testing jest --watch --verbose --runInBand --testTimeout=10000"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eralpkor/instagram_clone_be.git"
+  },
+  "keywords": [
+    "instagram",
+    "backend",
+    "clone"
+  ],
+  "author": "Eralp K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eralpkor/instagram_clone_be/issues"
+  },
+  "homepage": "https://github.com/eralpkor/instagram_clone_be#readme",
+  "dependencies": {
+    "apidoc": "^0.25.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.21.5",
+    "pg": "^8.3.2",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "jest": "^26.4.1",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
+  }
+}
