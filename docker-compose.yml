@@ -1,0 +1,18 @@
+version: "3.8"
+services: 
+  db:
+    image: postgres
+    environment: 
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: instagram-clone
+    volumes: 
+      - ./pgdata:/var/lib/postgres/data
+    ports:
+      - '5432:5432'
+  web:
+    image: instagram_clone_be
+    depends_on:
+      - db
+    ports:
+      - "5000:5000"

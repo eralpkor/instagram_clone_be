@@ -12,7 +12,7 @@ server.use(express.json());
 // server.use('/', main);
 
 server.get('/', (req, res) => {
-  res.send("<h2>Let's cook something! 🌽🥕 😄</h2>");
+  res.send("<h2>You're here! 😄 🥇</h2>");
 });
 
 
