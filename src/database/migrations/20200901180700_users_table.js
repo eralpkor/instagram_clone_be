@@ -10,6 +10,8 @@ exports.up = function(knex) {
         .notNullable();
       table.string('email', 128)
         .unique()
+      table.string('name', 55)
+      table.string('lastName', 55)
     })
 };
 
