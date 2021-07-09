@@ -26,7 +26,7 @@ exports.up = function(knex) {
       table.string('city', 20);
       table.string('state', 3);
       table.string('country', 20);
-    })
+    });
 };
 
 exports.down = function(knex) {

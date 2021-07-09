@@ -4,7 +4,7 @@
   "description": "Back End REST API for Instagram Clone App",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon index.js",
+    "dev": "nodemon index.js",
     "start": "node index.js",
     "test": "cross-env DB_ENV=testing jest --watch --verbose --runInBand --testTimeout=10000"
   },
